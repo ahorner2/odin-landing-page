@@ -10,6 +10,10 @@ img {
     width: 200px;
 }
 
+.img-wrapper {
+
+}
+
 button {
    font-family: Roboto, sans-serif;
    border: none;
@@ -29,14 +33,16 @@ button {
 .wrapper {
     color: white;
     display: flex;
+    flex-direction: column wrap;
     justify-content: space-between;
     align-content: stretch;
 
 }
 
-.img-wrapper {
+.header-content {
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-text {
