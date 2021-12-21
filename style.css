@@ -77,8 +77,7 @@ img {
     padding: 16px;
 }
 
-
-button {
+.top-button {
    font-family: Roboto, sans-serif;
    color: white;
    border: none;
@@ -117,13 +116,28 @@ h2 {
     align-content: space-around;
     padding: 32px;
     margin: 32px;
-
 }
 
-.info li {
+.info > li > p {
+    display: flex;
+    font-size: 18px;
+    word-wrap: break-word;
+    max-width: 90%;
+    padding-left: 12px;
+}
+
+.info > li > img {
+    border-radius: 25px;
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+blockquote {
     font-family: Consolas, sans-serif;
     display: inline-block;
-    font-size: 10px;
     word-wrap: break-word;
     overflow: hidden;
 }
@@ -155,37 +169,47 @@ h2 {
     margin-right: 400px;
 }
 
+.cta-wrapper {
+    align-self: center;
+    max-width: 100%;
+    display: flex;
+    padding-top: 64px;
+}
+
 .cta {
     font-family: Roboto, sans-serif;
     background: #2882F6;
+    color:white;
     margin: 64px;
-    padding: 5px 250px;
+    padding: 50px 300px;
     display: flex;
-    flex-flow: column wrap;
-    align-self: center;
+    align-self: space-between;
+
 }
 
-.cta p {
-    margin: 0;
-    color: white;
-}
-
-.cta-wrapper {
+.cta-header {
     font-family: Roboto, sans-serif;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.cta h2 {
     color: white;
 }
 
-.cta-wrapper button {
-    border: white;
-    border-color: #fff;
+.btn {
+    color: white;
     border-radius: 8px;
+    border-color: #fff;
     background: #3882F6;
     padding: 10px 20px;
-    flex: 1;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
 }
 
 .footer {
-    display: inline-block;
     background: #1F2937;
     align-self: stretch;
     margin-top: 64px;
